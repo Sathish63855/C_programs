@@ -13,7 +13,7 @@ int main(){
     for( i = 0; i < n; i++ ){
         scanf("%d", &a[i]);
     }
-
+5
     // Print the array elements
     printf("\nBefore Sorting : ");
     for( i = 0; i < n; i++ ){
