@@ -31,7 +31,6 @@ int main(){
         }
     }
 
- 
     // Print the array elements
     printf("\nAfter Sorting : ");
     for( i = 0; i < n; i++ ){
