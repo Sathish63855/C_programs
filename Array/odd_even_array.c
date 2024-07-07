@@ -29,14 +29,25 @@ void odd_even(int a[],int n){
 
     int i, e = 0, o = 0, odd[100], even[100];
 
+    // for( i = 0; i < n; i++){
+    //     if(a[i]%2 == 0){
+    //         even[e] = a[i];
+    //         e++;
+    //     }
+    //     else{
+    //         odd[o] = a[i];
+    //         o++;
+    //     }
+    // }
+    
     for( i = 0; i < n; i++){
-        if(a[i]%2 == 0){
-            even[e] = a[i];
-            e++;
-        }
-        else{
+        if(a[i]&1){
             odd[o] = a[i];
             o++;
+        }
+        else{
+            even[e] = a[i];
+            e++;
         }
     }
 

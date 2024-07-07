@@ -3,7 +3,6 @@
 
 int main(){
     int a[20];
-
     printf("Enter ur name : ");
     // scanf("%[^\n]%*c",&a);
     // scanf("%[^\n]s",&a);
@@ -15,11 +14,6 @@ int main(){
     for( int i = 0; i < 100 ; i++){
         printf("%d" ,a[i]);
     }
-
-
-
-
-
 
 
     // int dividend, divisor , remainder;

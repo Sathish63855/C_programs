@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<limits.h>
 
-int second_largest( int a[] ,int n);
+int second_smallest( int a[] ,int n);
 
 int main(){
     
@@ -14,27 +14,26 @@ int main(){
         scanf("%d",a+i);
     }
 
-    second_largest(a,n);
+    second_smallest(a,n);
 
     return 0;
 }
 
-int second_largest(int a[],int n){
+int second_smallest(int a[],int n){
     
     int i,l1,l2;
-    l1 = INT_MIN;
-    l2 = INT_MIN;
+    l1 = INT_MAX;
+    l2 = INT_MAX;
 
     for( i = 0 ; i < n; i++ ){
-        if( a[i] > l1 ){
+        if( a[i] < l1 ){
             l2 = l1;
             l1 = a[i];
         }
-        else if( a[i] > l2  && a[i] < l1){
+        else if( a[i] < l2  && a[i] > l1){
             l2 =a[i];
         }
     }
 
-    printf("The First Largest element is %d", l1);
-    printf("\nThe second Largest element is %d", l2);
+    printf("The second smallest element is %d", l2);
 }
