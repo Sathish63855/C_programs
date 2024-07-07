@@ -2,7 +2,7 @@
 
 int main(){
     
-    int i,n,pos,value,a[100];
+    int i,n,pos,a[100];
 
     // Get n value
     printf("\nEnter the number of values : ");
