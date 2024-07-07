@@ -2,18 +2,18 @@
 
 int convert(int n,int opr){
     
-    int i = 0,a[50],d = n;
+    int i ,a[50],d = n;
 
-    // for( i = 0; n != 0; i++){
-    //     a[i] = n%opr;
-    //     n /= opr;
-    // }
-
-    while(n != 0){
+    for( i = 0; n != 0; i++){
         a[i] = n%opr;
         n /= opr;
-        i++;
     }
+
+    // while(n != 0){
+    //     a[i] = n%opr;
+    //     n /= opr;
+    //     i++;
+    // }
 
     printf("The Converted value of %d : ", d);
     for( i = i-1; i >= 0; i--){
