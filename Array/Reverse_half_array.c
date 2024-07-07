@@ -1,16 +1,16 @@
 #include<stdio.h>
 
-void reverse(int a[],int n){
+void reverse(int *a,int n){
     int i,j,temp;
      for( i = 0, j = (n/2)-1; i < n/4; i++, j--){
-        temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
+        temp = *(a+i);
+        *(a+i) = *(a+j);
+        *(a+j) = temp;
     }
 
     printf("\nAfter : ");
     for( i = 0; i < n; i++ ){
-        printf("%d ", a[i]);
+        printf("%d ", *(a+i));
     }
 
 }
