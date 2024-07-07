@@ -2,14 +2,20 @@
 
 int convert(int n,int opr){
     
-    int i,r,a[50],d = n;
+    int i = 0,a[50],d = n;
 
-    for( i = 0; n != 0; i++){
+    // for( i = 0; n != 0; i++){
+    //     a[i] = n%opr;
+    //     n /= opr;
+    // }
+
+    while(n != 0){
         a[i] = n%opr;
         n /= opr;
+        i++;
     }
 
-    printf("The binary value of %d : ", d);
+    printf("The Converted value of %d : ", d);
     for( i = i-1; i >= 0; i--){
         printf(" %d ", a[i]);
     }

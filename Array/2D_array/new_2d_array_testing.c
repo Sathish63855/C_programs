@@ -37,4 +37,13 @@ int main(){
         printf("Column %d : %d \n",j+1 ,array[i][j]);
         }
     }
+
+    printf("The size of array is %d",sizeof(array));
+    // Free allocated memory 
+    for( i = 0; i < rows; i++){
+        free(array[i]);
+    }
+    free(array);
+
+    printf("The size of array is %d",sizeof(array));
 }
