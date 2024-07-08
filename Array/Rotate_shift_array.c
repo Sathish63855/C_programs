@@ -39,7 +39,6 @@ int main(){
         case 2 :
             left_shift(arr, n, shift);
             break;
-
     }
 
     // print_array(arr,n);
@@ -62,8 +61,8 @@ void right_shift(int right[], int n, int k)
 {
     int i,j,last;
 
-    for( i = 0; i < k; i++){
-        
+    for( i = 0; i < k; i++)
+    {
         last = right[n-1];
 
         for( j = n-1; j > 0; j--){
