@@ -2,7 +2,7 @@
 
 void print_array(int arr[],int n);
 void left_shift(int left[], int n, int k);
-// void right_shift(int right[], int n, int k);
+void right_shift(int right[], int n, int k);
 
 
 int main(){
@@ -16,10 +16,16 @@ int main(){
 
     printf("Enter the elements : \n");
     for( i = 0; i < n; i++){
+        printf("A[%d] : ", i);
         scanf("%d", &arr[i]);
     }
 
-    printf("Right rotate : 1 | Left rotate : 2 \nEnter operation :  ");
+    printf("The elements are : ");
+    for( i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+
+    printf("\nRight rotate : 1 | Left rotate : 2 \nEnter operation :  ");
     scanf("%d", &opr);
 
     printf("Enter the number of rotations : "); 
@@ -44,7 +50,7 @@ int main(){
 // Print_array Function
 void print_array(int arr[],int n)
 {
-    int i, j;
+    int i;
     for( i = 0; i < n; i++){
         printf("%d ",arr[i]);
     }
@@ -52,7 +58,7 @@ void print_array(int arr[],int n)
 }
 
 //Right_shift Function
-int right_shift(int right[], int n, int k)
+void right_shift(int right[], int n, int k)
 {
     int i,j,last;
 
@@ -60,11 +66,11 @@ int right_shift(int right[], int n, int k)
         
         last = right[n-1];
 
-        for( j = n-1; j >= 0; j--){
+        for( j = n-1; j > 0; j--){
             right[j] = right[j-1];
         }
 
-        right[i] = last; 
+        right[0] = last; 
     }
     printf("\nThe elements After Right shift : ");
     print_array(right,n);
