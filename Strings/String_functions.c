@@ -8,18 +8,13 @@ void main()
 
     printf("Enter String : ");
     gets(str1);
-    printf("Enter String : ");
-    gets(str2);
 
-    if(strcmp(str1,str2) == 0)
-    {
-        printf("Strings are equal");
-    }
-    else{
-        printf("Not Equal");
-    }
-    printf("%s\n", strupr(str1));
-    printf("%s\n", strlwr(str1));
-    printf("%s\n", strcat(str1,str2));
-    printf("%s\n", strrev(str1));
+    strcpy(str2,str1);
+    printf("%d\n", strcmp(str1,str2)); //0
+    printf("%s\n", strupr(str1)); // SATHISH
+    printf("%s\n", strlwr(str1)); //sathish
+    printf("%s\n", strcat(str2,str1));//SathishSathish
+    printf("%s\n", strrev(str1));//hsihtaS
+    printf("%d\n", strlen(str1));//7
+    
 }
