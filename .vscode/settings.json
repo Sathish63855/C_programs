@@ -4,5 +4,6 @@
         "STRING.H": "cpp",
         "stdio.h": "c",
         "STDIO.H": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
