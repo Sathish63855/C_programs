@@ -7,9 +7,13 @@ struct Student {
 };
 int main() {
     struct Student students[5];
-    int i;
+    int i, n;
+
+    printf("Enter NUmber of Students : ");
+    scanf("%d", &n);
+
     // Input information for 5 students
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < n; i++) {
         printf("Enter information for student %d:\n", i + 1);
         printf("Roll Number: ");
         scanf("%d", &students[i].rollNumber);
@@ -26,7 +30,7 @@ int main() {
 
     // Display the information of 5 students
     printf("Student Information:\n");
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < n; i++) {
         printf("Student %d\n", i + 1);
         printf("Roll Number: %d\n", students[i].rollNumber);
         printf("Name: %s\n", students[i].name);

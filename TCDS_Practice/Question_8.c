@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// ! Using If-else Condition
 int main() {
     int num1, num2, num3, largest;
 
@@ -27,6 +28,7 @@ int main() {
     return 0;
 }
 
+// ! Using Ternary Operator
 // #include <stdio.h>
 
 // int main() {
